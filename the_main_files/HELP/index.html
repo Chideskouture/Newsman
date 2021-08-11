@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Newsman Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body class="body-pink">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span class="text-bold">Newsman Documentation</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><span aria-hidden="true" class="icon icon_puzzle_alt"></span> Newsman - HTML Mobile Template</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: June 06, 2020</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row" >
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="package" class="doc-section">
+                                <h2 class="section-title">Package files content</h2>
+                                <div class="section-block">
+                                     <div class="mb-4">
+										The package you downloaded from themeforest include the following structure:
+									 </div>
+									 <img src="assets/images/01.PNG" alt="Folder Structure">
+									 
+									  <div class="mt-4">The main HTML file is index.html will open the homepage.</div>
+                                </div><!--//section-block-->
+                                                                
+                            </section><!--//doc-section-->
+                            
+                            <section id="usage" class="doc-section">
+                                <h2 class="section-title">Different usage of this mobile template</h2>
+                                <div id="projects1" class="section-block">
+									 This mobile template can be used to create a mobile website, a web app, and a native app. Depending on your needs you can use this layout to create the desired final product.           
+                                </div><!--//section-block-->
+								
+								<div id="projects2" class="section-block">
+									<h3 class="block-title">Creating a mobile website, redirecting from your desktop website to the mobile one</h3>
+									<p>You can use this template to create a mobile version of your website. Considering that you main desktop website is not responsive or you want a separate mobile version of it, the template is a perfect solution to do that.</p>
+
+									<p>To create a separate mobile version of your website using this template will require to create a subdomain or a subfolder of your domain (mobile.yourwebsite.com or m.yourwebsite.com) where the main files will be copied.</p>
+
+									<p>To redirect users to your new created mobile website you will need to use a redirection code. First you need to add a mobile detection code, and then redirect mobile users to the mobile url.</p>
+
+									<p><strong>For more information about mobile detection and redirection</strong> check THIS <a href="http://detectmobilebrowsers.com/">WEBSITE</a>.</p>       
+                                </div><!--//section-block-->
+								
+								<div id="projects3" class="section-block">
+									<h3 class="block-title">Converting it into a native app</h3>
+									<p>To convert this template into a native app you will need to use solutions like phonegap.</p>
+
+									<p>"Easily create apps using the web technologies you know and love: HTML, CSS, and JavaScript.</p>
+
+									<p>PhoneGap is a free and open source framework that allows you to create mobile apps using standardized web APIs for the platforms you care about.</p>
+
+									<p>More about phonegap on their <a href="https://phonegap.com/">WEBSITE</a></p>     
+                                </div><!--//section-block-->
+                               
+                            </section><!--//doc-section-->
+							
+                            <section id="index" class="doc-section">
+                                <h2 class="section-title">Index page structure</h2>
+                                <div class="section-block">
+                                    <p> The main page of this template is index.html file. This is the homepage of your website, the first page the browser will open when users will access your website.</p>
+									<pre><code class="language-markup">
+&lt;body class="theme-dark color-theme-white"&gt;
+	&lt;div id="app"&gt;
+		&lt;div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/"&gt;
+			&lt;div class="page page-home"&gt;
+				&lt;div class="page-content"&gt;
+					
+					&lt;!-- Navbar --&gt;
+					&lt;div class="navbar navbar-transparent safe-areas"&gt;
+					  &lt;div class="navbar-bg"&gt;&lt;/div&gt;
+					  &lt;div class="navbar-inner"&gt;
+						&lt;div class="left"&gt;
+						  &lt;a href="#" class="link icon-only newsman-notification"&gt;
+							&lt;i data-feather="bell"&gt;&lt;/i&gt;
+							&lt;span class="badge color-red"&gt;6&lt;/span&gt;
+						  &lt;/a&gt;
+						&lt;/div&gt;
+						&lt;div class="right"&gt;
+						  &lt;a class="link icon-only"&gt;
+							&lt;i data-feather="search"&gt;&lt;/i&gt;
+						  &lt;/a&gt;
+						&lt;/div&gt;
+					  &lt;/div&gt;
+					&lt;/div&gt;
+					&lt;!-- /Navbar --&gt;
+					
+					
+					&lt;!-- Page Content --&gt;
+					&lt;div class="newsman-block"&gt;
+						
+						&lt;!-- Block Title --&gt;
+						&lt;div class="newsman-block-title display-flex align-items-center justify-content-space-between"&gt;
+							&lt;div&gt;
+							  &lt;div class="block-title-medium no-margin block-title text-semibold"&gt;Today News&lt;/div&gt;
+							  &lt;div class="newsman-opacity block-title no-margin newsman-block-subtitle"&gt;Read trending news&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="newsman-badge"&gt;
+							  &lt;a href="#" class="badge bg-color-white text-color-black"&gt;SEE ALL&lt;/a&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;!-- /Block Title --&gt;
+						
+						&lt;!-- Block Content --&gt;
+						&lt;div class="newsman-block-content"&gt;
+							Your Content
+						&lt;div&gt;
+						&lt;!-- Block Content --&gt;
+												
+					&lt;/div&gt;
+					&lt;!-- /Page Content --&gt;
+					
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+									</code></pre>
+
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+							
+							
+							<section id="css" class="doc-section">
+                                <h2 class="section-title">CSS Files</h2>				
+								<div id="projects4" class="section-block">
+									<h3 class="block-title">Main CSS File</h3>
+									<p>The main CSS File is app.css, it's located in CSS folder</p>
+									<p>At the top of the file there is a "Table of Contents" list that will guide through the CSS code.</p>
+									
+									<pre><code class="language-css">
+	/*==============================================
+	[Main stylesheet app.css]
+
+	Author:			WM_Team
+	Version:		1.1
+	Created:		06 June 2020
+	Last updated:	06 June 2020
+	Template:		Newsman - Blog & Magazine Mobile HTML Template
+	================================================*/
+	/*
+	[Table of Contents]
+
+	01. GENERAL
+	02. FULL POST BACKGROUND
+	03. AUTHORS
+	04. BLOG LIST
+	05. MASONRY POST
+	06. CARD POST
+	07. BIG LIST POST
+	08. SOCIAL MEDIA
+	09. SEARCH INPUT
+	10. POST GRID
+	11. PROFILE PAGE
+	12. SINGLE PAGE
+	13. 404 PAGE
+	14. BIG LIST SINGLE
+	*/
+									</code></pre>      
+                                </div><!--//section-block-->
+								
+								<div id="projects5" class="section-block">
+									<h3 class="block-title">Framework7 CSS File</h3>
+									<p>The template use framework7.bundle.min.css file, and is the script CSS we are using to create the main functionality of the pages. WE RECOMMEND NOT TO EDIT THIS.</p>     
+                                </div><!--//section-block-->
+                               
+                            </section><!--//doc-section-->
+							
+							<section id="js" class="doc-section">
+                                <h2 class="section-title">Javascript Files</h2>										
+								<div id="projects6" class="section-block">
+									<p> The template includes 3 main javascript files which are loaded at the end of each index file</p>  
+									
+									  <pre><code class="language-markup">
+	&lt;!-- Create Masonry style--&gt;
+	&lt;script src="https://cdn.jsdelivr.net/npm/macy@2"&gt;&lt;/script&gt;
+	&lt;!-- Icons --&gt;
+	&lt;script src="js/feather.min.js"&gt;&lt;/script&gt;
+	&lt;!--  Main core functions for the pages and layout --&gt;
+	&lt;script src="js/framework7.bundle.min.js"&gt;&lt;/script&gt;
+	&lt;!--   JS File to initialize all routes in the app --&gt;
+	&lt;script src="js/routes.js"&gt;&lt;/script&gt;
+	&lt;!--    Custom functions of the template. --&gt;
+	&lt;script src="js/app.js"&gt;&lt;/script&gt;
+									  </code></pre>  
+									  
+                                </div><!--//section-block-->
+                               
+                            </section><!--//doc-section-->
+							
+							
+							<section id="source" class="doc-section">
+                                <h2 class="section-title">Sources and Credits</h2>										
+								<div id="projects7" class="section-block">
+								<h3 class="block-title">Scripts Credits</h3>
+									<ul>
+										<li class="mb-4">
+											<a href="https://framework7.io/">Framework7</a> - is a free and open source framework to develop mobile, desktop or web apps with native look and feel. It is also an indispensable prototyping tool to show working app prototype as soon as possible in case you need to.
+										</li>
+										<li class="mb-4">
+											<a href="http://macyjs.com/">Macy.js</a> is a lightweight, dependency-free, 4kb masonry layout library, designed for a hassle-free configuration.
+										</li>
+										<li>
+											<a href="https://feathericons.com/">Feather</a> is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency, and flexibility.
+										</li>
+									</ul>
+                                </div><!--//section-block-->
+								
+								
+								<div id="projects8" class="section-block">
+								<h3 class="block-title">Images Credits</h3>
+									<ul>
+										<li class="mb-4">
+											<a href="https://unsplash.com/">Unsplash</a> is beautiful, free images and photos that you can download and use for any project. Better than any royalty free or stock photos.
+										</li>
+										<li class="mb-4">
+											<a href="https://www.freepik.com/">Freepik</a> a Graphic resources
+										</li>
+									</ul>
+									
+									<div class="alert alert-danger" role="alert">
+									 NOTE: *All images are not included in the main files only to demo
+									</div>
+
+                                </div><!--//section-block-->
+                               
+                            </section><!--//doc-section-->
+							
+							
+							<section id="changelog" class="doc-section">
+                                <h2 class="section-title">Changelog</h2>
+								
+								<div id="projects9" class="section-block">
+									<ul>
+										<li><strong>First release:</strong> June 06, 2020</li>
+									</ul>
+                                </div><!--//section-block-->
+                               
+                            </section><!--//doc-section-->
+							
+							
+                            
+                        </div><!--//content-inner-->
+						
+						
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                                <a class="nav-link scrollto" href="#package">Package files content</a>
+                                <a class="nav-link scrollto" href="#usage">Mobile template usage</a>
+                                <a class="nav-link scrollto" href="#index">Index page structure</a>
+                                <a class="nav-link scrollto" href="#css">CSS Files</a>
+                                <a class="nav-link scrollto" href="#js">Javascript Files</a>
+                                <a class="nav-link scrollto" href="#source">Sources and Credits</a>
+                                <a class="nav-link scrollto" href="#changelog">Changelog</a>
+                            </nav><!--//doc-menu-->
+                        </div><!--//doc-nav-->
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+        
+        
+    </div><!--//page-wrapper-->
+    
+    
+    
+     
+    <!-- Main Javascript -->          
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script  src="assets/plugins/prism/prism.js"></script>    
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>       
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"></script>
+	<script  src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
